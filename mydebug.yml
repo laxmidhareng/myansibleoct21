@@ -14,6 +14,6 @@
     command:
       cmd: hostname -i
     register: myresult1
-  - name: i want to display myresult
+  - name: i want to display myresult1
     debug: 
-      msg: "{{myresult2}}"
+      msg: "{{myresult1}}"
