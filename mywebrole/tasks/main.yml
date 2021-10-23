@@ -1,7 +1,6 @@
 ---
 # tasks file for mywebrole
 - name: install webserver
-  tasks: 
-    apt: 
+  apt: 
     name: apache2
     state: present
