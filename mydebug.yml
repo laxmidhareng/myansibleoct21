@@ -9,3 +9,11 @@
   - name: i want to display myresult
     debug: 
       msg: "{{myresult}}"
+
+  - name: i want to execute linux command2
+    command:
+      cmd: hostname -i
+    register: myresult1
+  - name: i want to display myresult
+    debug: 
+      msg: "{{myresult2}}"
