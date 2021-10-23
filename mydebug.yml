@@ -10,10 +10,20 @@
     debug: 
       msg: "{{myresult}}"
 
-  - name: i want to execute linux command2
+  - name: i want to execute linux 2nd command
     command:
       cmd: hostname -i
     register: myresult1
   - name: i want to display myresult1
     debug: 
       msg: "{{myresult1}}"
+  - name: i want to install git
+    apt: 
+      name: git
+      state: present
+      when: myresult.stderr== ""
+  - name: i want to install tree
+    apt: 
+      name: tree
+      state: present
+      when: myresult.stderr != ""
