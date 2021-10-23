@@ -1,5 +1,5 @@
 ---
-- hosts:
+- hosts: all
   become: yes
   tasks: 
   - name: i want to install webserver on ubuntu node
@@ -10,3 +10,4 @@
     service:
       name: apache2
       state: started
+
