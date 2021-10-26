@@ -2,7 +2,6 @@
 # Update & Java Installation
 - name:
   apt:
-    name: foo
     update_cache: yes
 
 - name: install java
