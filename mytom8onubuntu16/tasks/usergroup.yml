@@ -5,8 +5,8 @@
     name: tomcat
     state: present
 - name: create user
-  group: 
+  user: 
     name: tomcat
-    shell: /bin/true
+    shell: /bin/false 
     group: tomcat
     home: /opt/tomcat
