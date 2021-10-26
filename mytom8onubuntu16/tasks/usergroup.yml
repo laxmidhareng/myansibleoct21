@@ -4,7 +4,6 @@
   group: 
     name: tomcat
     state: present
-
 - name: create user
   group: 
     name: tomcat
