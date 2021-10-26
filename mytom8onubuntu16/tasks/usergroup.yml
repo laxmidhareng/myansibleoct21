@@ -1,5 +1,5 @@
 ---
-# create tomcat user group
+# create tomcat user & group
 - name: create group
   group: 
     name: tomcat
